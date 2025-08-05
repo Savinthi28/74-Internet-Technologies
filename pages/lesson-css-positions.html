@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson CSS Position</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #box1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: blue;
+
+        /* ===== 1. relative ===== */
+        /* Elements are positioned relative to their normal position. The element remains in the normal document flow. */
+        /* position: relative;
+        top: 12px;
+        right: 12px;
+        left: 12px;
+        bottom: 12px; */
+
+        /* ===== 2. Static ===== */
+        /* Default positioning for all elements. Elements are positioned according to
+        the normal flow of the document. */
+        /* position: static;
+        top: 12px;
+        left: 12px; */
+
+        /* ===== 3. Absolute ===== */
+        /* position: relative;
+        top: 20px;
+        left: 20px; */
+
+        /* ===== 4. Fixed ===== */
+        /* The element is removed from the normal document flow. It is positioned relative to the viewport, meaning it stays in the same place even when scrolling. */
+        /* position: fixed;
+        top: 0; */
+
+        /* ===== 5. Sticky ===== */
+        /* The element toggles between relative and fixed depending on scroll position. It behaves like relative until it reaches a specified top, left, right, or bottom, then acts like fixed. */
+        position: sticky;
+        top: 0;
+      }
+      #box2 {
+        /* ====== 3. absolute ===== */
+        /* Elements are positioned relative to their nearest positioned parent (a
+      parent with any position other than static). If no such parent exists,
+      they are positioned relative to the initial containing block (usually the
+      viewport). The element is removed from the normal document flow. */
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border: 1px solid black;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nisi
+      similique voluptatum animi esse provident, alias pariatur, magnam dicta
+      atque, nemo expedita doloremque? Qui nostrum facere dolorum veritatis
+      aliquam culpa corrupti error aut doloremque, minima fugiat repudiandae in
+      ad magni minus, eos asperiores laudantium totam veniam perferendis
+      aspernatur atque? Quae nostrum unde explicabo asperiores minus ea
+      similique ipsam porro reiciendis, repellendus dolorem, expedita sequi cum
+      aliquid consectetur laborum nam, ducimus molestias magni nemo neque
+      mollitia ad! Soluta beatae asperiores sint cum odit porro rerum aspernatur
+      delectus, provident ipsa natus suscipit doloremque fugit non eum eos!
+      Beatae ex vitae accusamus doloremque.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. At magni ad
+      molestiae consequuntur dicta reprehenderit nam dolor! Ab, quos. Doloremque
+      in vero nesciunt quam commodi aliquid maiores eaque eos dolor recusandae
+      dignissimos cum eveniet molestiae, adipisci nostrum error fugiat
+      repellendus? Unde eos, error consectetur repellendus officia aperiam.
+      Numquam repudiandae omnis quia, repellendus aspernatur illo consectetur
+      ipsa eligendi nobis sed odit eum suscipit natus accusantium! Consequatur,
+      veniam. Minima iure sequi esse, ipsa quaerat ducimus in, voluptatibus
+      magnam similique tempore, at laboriosam delectus! Rerum magnam soluta
+      pariatur, sequi numquam minima temporibus cum. Laborum voluptatem quos
+      repellendus placeat magni dolore facilis, esse iusto?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+      aspernatur a, dolore omnis deserunt ducimus accusantium veritatis? Quam,
+      quasi aperiam. Aliquam labore saepe harum laudantium obcaecati sit
+      reprehenderit, inventore provident rerum vero dolores suscipit tenetur
+      ipsa quaerat deserunt. Accusantium quod at quae commodi ullam unde eveniet
+      earum, atque expedita repudiandae?
+    </p>
+    <div id="box1">
+      <div id="box2"></div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, similique
+      sint repellat incidunt quis ratione, accusantium numquam hic ad, maxime et
+      maiores voluptatibus! Deleniti ullam dolores odit repellat ex minus
+      molestiae, magnam, provident et est amet quaerat voluptatibus! Qui quidem
+      architecto dolorem soluta non! Atque ullam vitae aliquid ducimus placeat
+      reiciendis tempore commodi, impedit nobis, ipsa expedita, nisi debitis
+      doloremque sit optio quis similique sint dicta at dolorum molestiae
+      sapiente. Natus esse dolorem ea qui excepturi quod optio exercitationem
+      distinctio facilis fugiat harum, ipsum velit consequatur, dolorum quidem,
+      placeat magni debitis non. Animi doloremque soluta nisi dolor iusto nihil!
+      Nobis.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+      reprehenderit tenetur maiores possimus, dolor praesentium dignissimos,
+      quod voluptate nisi deserunt inventore, sed illum minima quo rerum. Est
+      non ducimus cumque cupiditate saepe facilis ratione pariatur natus
+      consectetur a dolorum suscipit error blanditiis tenetur consequuntur,
+      excepturi dignissimos eveniet praesentium eius aut impedit vitae
+      aspernatur distinctio ipsa. Labore, error cupiditate aperiam, ea animi
+      optio doloribus quo repellat voluptatibus iusto illo est recusandae autem
+      cum voluptate, reprehenderit harum repudiandae fuga laudantium officia
+      tenetur magnam consequuntur? Vel expedita, ipsa quibusdam rem saepe ad.
+      Non hic perferendis similique enim officia temporibus repudiandae tempora
+      accusamus eligendi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, similique
+      sint repellat incidunt quis ratione, accusantium numquam hic ad, maxime et
+      maiores voluptatibus! Deleniti ullam dolores odit repellat ex minus
+      molestiae, magnam, provident et est amet quaerat voluptatibus! Qui quidem
+      architecto dolorem soluta non! Atque ullam vitae aliquid ducimus placeat
+      reiciendis tempore commodi, impedit nobis, ipsa expedita, nisi debitis
+      doloremque sit optio quis similique sint dicta at dolorum molestiae
+      sapiente. Natus esse dolorem ea qui excepturi quod optio exercitationem
+      distinctio facilis fugiat harum, ipsum velit consequatur, dolorum quidem,
+      placeat magni debitis non. Animi doloremque soluta nisi dolor iusto nihil!
+      Nobis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, similique
+      sint repellat incidunt quis ratione, accusantium numquam hic ad, maxime et
+      maiores voluptatibus! Deleniti ullam dolores odit repellat ex minus
+      molestiae, magnam, provident et est amet quaerat voluptatibus! Qui quidem
+      architecto dolorem soluta non! Atque ullam vitae aliquid ducimus placeat
+      reiciendis tempore commodi, impedit nobis, ipsa expedita, nisi debitis
+      doloremque sit optio quis similique sint dicta at dolorum molestiae
+      sapiente. Natus esse dolorem ea qui excepturi quod optio exercitationem
+      distinctio facilis fugiat harum, ipsum velit consequatur, dolorum quidem,
+      placeat magni debitis non. Animi doloremque soluta nisi dolor iusto nihil!
+      Nobis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, similique
+      sint repellat incidunt quis ratione, accusantium numquam hic ad, maxime et
+      maiores voluptatibus! Deleniti ullam dolores odit repellat ex minus
+      molestiae, magnam, provident et est amet quaerat voluptatibus! Qui quidem
+      architecto dolorem soluta non! Atque ullam vitae aliquid ducimus placeat
+      reiciendis tempore commodi, impedit nobis, ipsa expedita, nisi debitis
+      doloremque sit optio quis similique sint dicta at dolorum molestiae
+      sapiente. Natus esse dolorem ea qui excepturi quod optio exercitationem
+      distinctio facilis fugiat harum, ipsum velit consequatur, dolorum quidem,
+      placeat magni debitis non. Animi doloremque soluta nisi dolor iusto nihil!
+      Nobis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, similique
+      sint repellat incidunt quis ratione, accusantium numquam hic ad, maxime et
+      maiores voluptatibus! Deleniti ullam dolores odit repellat ex minus
+      molestiae, magnam, provident et est amet quaerat voluptatibus! Qui quidem
+      architecto dolorem soluta non! Atque ullam vitae aliquid ducimus placeat
+      reiciendis tempore commodi, impedit nobis, ipsa expedita, nisi debitis
+      doloremque sit optio quis similique sint dicta at dolorum molestiae
+      sapiente. Natus esse dolorem ea qui excepturi quod optio exercitationem
+      distinctio facilis fugiat harum, ipsum velit consequatur, dolorum quidem,
+      placeat magni debitis non. Animi doloremque soluta nisi dolor iusto nihil!
+      Nobis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, similique
+      sint repellat incidunt quis ratione, accusantium numquam hic ad, maxime et
+      maiores voluptatibus! Deleniti ullam dolores odit repellat ex minus
+      molestiae, magnam, provident et est amet quaerat voluptatibus! Qui quidem
+      architecto dolorem soluta non! Atque ullam vitae aliquid ducimus placeat
+      reiciendis tempore commodi, impedit nobis, ipsa expedita, nisi debitis
+      doloremque sit optio quis similique sint dicta at dolorum molestiae
+      sapiente. Natus esse dolorem ea qui excepturi quod optio exercitationem
+      distinctio facilis fugiat harum, ipsum velit consequatur, dolorum quidem,
+      placeat magni debitis non. Animi doloremque soluta nisi dolor iusto nihil!
+      Nobis.
+    </p>
+    <!-- CSS Position
+     1) Static
+     2)Relative
+     3)Absolute
+     4)Fixed(fixed vs Sticky)
+     5)Sticky -->
+  </body>
+</html>

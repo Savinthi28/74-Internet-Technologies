@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises-6</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: wheat;
+      }
+      #logo-container {
+        display: flex;
+      }
+      #logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 12px;
+      }
+      header {
+        background-color: black;
+        color: wheat;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8vh;
+      }
+      nav > ul {
+        display: flex;
+        list-style: none;
+      }
+      nav > ul > li {
+        margin: 0 40px;
+      }
+      nav > ul > li > a {
+        color: wheat;
+        text-decoration: none;
+      }
+      #hero-section {
+        display: flex;
+        width: 100%;
+        margin-top: 10vh;
+      }
+      #hero-content {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+      }
+      #hero-image {
+        width: 50%;
+        height: 95vh;
+        object-fit: cover;
+      }
+      #info-btn {
+        background-color: black;
+        color: wheat;
+        padding: 16px;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+      #social-media {
+        display: flex;
+        margin-top: 16px;
+        justify-content: center;
+      }
+      #social-media img {
+        width: 32px;
+        height: 32px;
+        margin: 0 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo-container">
+        <img
+          id="logo"
+          src="/assets/images/WhatsApp Image 2025-07-25 at 9.38.43 AM.jpeg"
+          alt="logo"
+        />
+        <h3>Savinthi Vipulma</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section">
+        <div id="hero-content">
+          <h1>Welcome to my website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            molestias harum, at cupiditate sed omnis labore facilis laudantium
+            nihil nulla voluptatibus doloremque quasi quam natus vel asperiores
+            beatae temporibus recusandae sunt soluta, quas excepturi quo! Veniam
+            officia labore perferendis eos dicta asperiores facere iusto at
+            voluptatum. Amet, reiciendis! Libero, dolor.
+          </p>
+          <button id="info-btn">More Info</button>
+          <div id="social-media">
+            <a href="#">
+              <img
+                src="/assets/images/Facebook_icon.webp"
+                alt="Facebook_icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/assets/images/LinkedIn_icon.svg.png"
+                alt="LinkedIn_icon"
+              />
+            </a>
+            <a href="#">
+              <img src="/assets/images/github-image.webp" alt="github-image" />
+            </a>
+            <a href="#">
+              <img src="/assets/images/YouTube_icon.webp" alt="YouTube_icon" />
+            </a>
+          </div>
+        </div>
+        <img
+          id="hero-image"
+          src="/assets/images/WhatsApp Image 2025-07-25 at 9.38.43 AM.jpeg"
+          alt="Profile"
+        />
+      </section>
+    </main>
+  </body>
+</html>
