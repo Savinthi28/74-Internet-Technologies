@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson CSS Animations</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+        /* animation-name: down-up;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+        animation-delay: 1s; */
+
+        /* animation: down-up 2s ease-in-out 1 0s; */
+
+        /* animation: background-change 10s ease-in-out 2 0s; */
+
+        animation: run-square 5s ease-in-out 2 0s;
+      }
+
+      /* @keyframes down-up {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(200px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      } */
+      /* @keyframes background-change {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        75% {
+          background-color: black;
+        }
+        100% {
+          background-color: red;
+        }
+      } */
+
+      @keyframes run-square {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(200px);
+        }
+        50% {
+          transform: translateX(200px) translateY(200px);
+        }
+        75% {
+          transform: translateX(0) translateY(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
