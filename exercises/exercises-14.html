@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises-14</title>
+    <style>
+      section:first-child {
+        background-color: #ff0000;
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      section:nth-child(2) {
+        background-color: #00ff1a;
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      section:nth-child(3) {
+        background-color: #fff200;
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      section:nth-child(4) {
+        background-color: #ff0073;
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      section:first-child > div:first-child,
+      section:nth-child(2) > div:first-child,
+      section:nth-child(3) > div:first-child,
+      section:nth-child(4) > div:first-child {
+        background-color: #ffffff;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(25vw - 100px);
+        top: calc(25vh - 100px);
+      }
+
+      section:first-child > div:nth-child(2),
+      section:nth-child(2) > div:nth-child(2),
+      section:nth-child(3) > div:nth-child(2),
+      section:nth-child(4) > div:nth-child(2) {
+        background-color: #ff0000;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: calc(25vw - 40px);
+        top: calc(25vh - 40px);
+      }
+
+      section:nth-child(5) {
+        background-color: #ffffff;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      section:nth-child(5) > div {
+        background-color: #ff0000;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      section:nth-child(6) > div:first-child {
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom-right-radius: 100px;
+      }
+
+      section:nth-child(6) > div:nth-child(2) {
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom-left-radius: 100px;
+      }
+
+      section:nth-child(6) > div:nth-child(3) {
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-top-right-radius: 100px;
+      }
+
+      section:nth-child(6) > div:nth-child(4) {
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 100px;
+      }
+
+      section:nth-child(6) > div:nth-child(5) {
+        background-color: #ffffff;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+      section:nth-child(6) > div:nth-child(6) {
+        background-color: #ffffff;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+      </section>
+
+      <section>
+        <div></div>
+      </section>
+
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </main>
+  </body>
+</html>
