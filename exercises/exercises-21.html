@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-21</title>
+    <style>
+      body {
+        background-color: rgb(68, 68, 235);
+      }
+      section > div {
+        position: absolute;
+        background-color: gray;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      section > div > h2 {
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      section > div::before {
+        content: "";
+        border: 20px solid white;
+        border-top: 20px solid red;
+        transition: 2s;
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+      }
+      section > div:hover:before {
+        transform: rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h2>RWAD</h2>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-23</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 3px solid red;
+        position: absolute;
+        animation: test 2s infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes test {
+        from {
+          width: 1px;
+          height: 1px;
+        }
+        to {
+          height: 200px;
+          width: 200px;
+          opacity: 0;
+        }
+      }
+      div:hover {
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
